@@ -16,8 +16,8 @@
           <a-menu-item key="usermanger">
             用户管理
           </a-menu-item>
-          <a-menu-item key="4">
-            待定
+          <a-menu-item key="myexamples">
+            折线图
           </a-menu-item>
           <a-menu-item key="5">
             待定

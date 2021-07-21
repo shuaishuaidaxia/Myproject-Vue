@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import OPtion1 from '../views/OPtion1'
 import Option2 from '../views/Option2'
 import usermanger from '../views/user-manger'
+import myexamples from '../views/my-Examples'
 Vue.use(VueRouter)
 
 const routes = [
@@ -30,6 +31,11 @@ const routes = [
             path: 'usermanger',
             name: 'usermanger',
             component: usermanger
+          },
+          {
+            path: 'myexamples',
+            name: 'myexamples',
+            component: myexamples
           }
         ]
       }

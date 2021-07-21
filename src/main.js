@@ -7,6 +7,9 @@ import 'ant-design-vue/dist/antd.css' // or 'ant-design-vue/dist/antd.less'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import request from './http/request'
+import echarts from 'echarts'
+
+Vue.prototype.$echarts = echarts
 Vue.config.productionTip = false
 Vue.use(Antd)
 Vue.use(ElementUI)
