@@ -15,7 +15,7 @@
       @cancel="handleCancel"
       @create="handleCreate"
     />
-    <a-table bordered :data-source="getuserlist" :columns="columns" rowKey="id" :pagination="pagination" @change="handleTableChange"  >
+    <a-table bordered :data-source="getuserlist" :columns="columns" rowKey="id" :pagination="pagination" @change="handleTableChange" >
       <template slot="name" slot-scope="text, record">
         <editable-cell :text="text" @change="onCellChange(record.id, 'name', $event)" />
       </template>
