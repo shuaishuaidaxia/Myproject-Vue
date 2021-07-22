@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import OPtion1 from '../views/OPtion1'
 import Option2 from '../views/Option2'
 import usermanger from '../views/user-manger'
 import myexamples from '../views/my-Examples'
+import myexamplesline from '../views/myexamples/myexamplesline'
+import examplescategory from '../views/myexamples/examplescategory'
 Vue.use(VueRouter)
 
 const routes = [
@@ -16,9 +17,21 @@ const routes = [
       {
         // 当 /user/:id/profile 匹配成功，
         // UserProfile 会被渲染在 User 的 <router-view> 中
-        path: '/option1',
-        component: OPtion1,
-        name: 'option1'
+        path: 'myexamples',
+        component: myexamples,
+        name: 'myexamples',
+        children: [
+           {
+            path: 'myexamplesline',
+            name: 'myexamplesline',
+            component: myexamplesline
+          },
+          {
+            path: 'examplescategory',
+            name: 'examplescategory',
+            component: examplescategory
+          }
+        ]
       },
       {
         // 当 /user/:id/posts 匹配成功
@@ -31,11 +44,6 @@ const routes = [
             path: 'usermanger',
             name: 'usermanger',
             component: usermanger
-          },
-          {
-            path: 'myexamples',
-            name: 'myexamples',
-            component: myexamples
           }
         ]
       }

@@ -5,8 +5,23 @@
       <a-menu theme="dark" :default-selected-keys="['1']" mode="inline" @click="home">
         <a-menu-item key="option1">
           <a-icon type="pie-chart" />
-          <span>Option 1</span>
+          <span>Examples实例</span>
         </a-menu-item>
+        <a-sub-menu key="myexamples">
+          <span slot="title"><a-icon type="area-chart" /><span>examples</span></span>
+          <a-menu-item key="myexamplesline">
+            <a-icon type="line-chart" />折线图
+          </a-menu-item>
+          <a-menu-item key="examplescategory">
+            <a-icon type="bar-chart" />柱状图
+          </a-menu-item>
+          <a-menu-item key="vertical">
+            <a-icon type="pie-chart" />饼图
+          </a-menu-item>
+          <a-menu-item key="scatter">
+            <a-icon type="dot-chart" />散点图
+          </a-menu-item>
+        </a-sub-menu>
         <a-menu-item key="option2">
           <a-icon type="desktop" />
           <span>Option 2</span>
@@ -15,9 +30,6 @@
           <span slot="title"><a-icon type="user" /><span>User</span></span>
           <a-menu-item key="usermanger">
             用户管理
-          </a-menu-item>
-          <a-menu-item key="myexamples">
-            折线图
           </a-menu-item>
           <a-menu-item key="5">
             待定

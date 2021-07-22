@@ -7,7 +7,8 @@
 
 <script>
 export default {
-  name: 'OPtion1'
+  name: 'OPtion1',
+
 }
 </script>
 
