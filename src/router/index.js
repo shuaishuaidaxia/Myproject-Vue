@@ -6,6 +6,7 @@ import usermanger from '../views/user-manger'
 import myexamples from '../views/my-Examples'
 import myexamplesline from '../views/myexamples/myexamplesline'
 import examplescategory from '../views/myexamples/examplescategory'
+import myexamplePiechart from '../views/myexamples/myexamplePiechart'
 Vue.use(VueRouter)
 
 const routes = [
@@ -21,7 +22,7 @@ const routes = [
         component: myexamples,
         name: 'myexamples',
         children: [
-           {
+          {
             path: 'myexamplesline',
             name: 'myexamplesline',
             component: myexamplesline
@@ -30,6 +31,11 @@ const routes = [
             path: 'examplescategory',
             name: 'examplescategory',
             component: examplescategory
+          },
+          {
+            path: 'piechart',
+            name: 'piechart',
+            component: myexamplePiechart
           }
         ]
       },

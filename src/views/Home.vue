@@ -15,7 +15,7 @@
           <a-menu-item key="examplescategory">
             <a-icon type="bar-chart" />柱状图
           </a-menu-item>
-          <a-menu-item key="vertical">
+          <a-menu-item key="piechart">
             <a-icon type="pie-chart" />饼图
           </a-menu-item>
           <a-menu-item key="scatter">
